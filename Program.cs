@@ -9,31 +9,36 @@
         static void Main(string[] args)
         {
             Art[] artlista = new Art[100];
-
+            
             string[] art = new string[100];
             string[] familj = new string[100];
             string[] sv = new string[100];
             int sista = 0;
-            art[sista] = "Hepatica nobilis";
-            familj[sista] = "Ranunculaceae";
-            sv[sista] = "Blåsippa";
-            sista++;
-            art[sista] = "Anemone nemorosa";
-            familj[sista] = "Ranunculaceae";
-            sv[sista] = "Vitsippa";
-            sista++;
-            art[sista] = "Taraxacum ruderalia";
-            familj[sista] = "Asteraceae";
-            sv[sista] = "Maskros";
-            sista++;
-            art[sista] = "Malus domestica";
-            familj[sista] = "Rosales";
-            sv[sista] = "Äppelträd";
-            sista++;
-            art[sista] = "Pinus sylvestris";
-            familj[sista] = "Pinaceae";
-            sv[sista] = "Tall";
-            sista++;
+            artlista[0] = new Art() { art = "Hepatica nobilis", familj = "Ranunculaceae", svenska = "Blåsippa" };
+            artlista[1] = new Art() { art = "Anemone nemorosa", familj = "Ranunculaceae", svenska = "Vitsippa" };
+            artlista[2] = new Art() { art = "Taraxacum ruderalia", familj = "Asteraceae", svenska = "Maskros" };
+            artlista[3] = new Art() { art = "Malus domestica", familj = "Rosales", svenska = "Äppelträd" };
+            artlista[4] = new Art() { art = "Pinus sylvestris", familj = "Pinaceae", svenska = "Tall" };
+            artlista[sista].art = "Hepatica nobilis";
+            artlista[sista].familj = "Ranunculaceae";
+            artlista[sista].svenska = "Blåsippa";
+            //sista++;
+            artlista[sista].art = "Anemone nemorosa";
+            artlista[sista].familj = "Ranunculaceae";
+            artlista[sista].svenska = "Vitsippa";
+            //sista++;
+            artlista[sista].art = "Taraxacum ruderalia";
+            artlista[sista].familj = "Asteraceae";
+            artlista[sista].svenska = "Maskros";
+            //sista++;
+            artlista[sista].art = "Malus domestica";
+            artlista[sista].familj = "Rosales";
+            artlista[sista].svenska = "Äppelträd";
+            //sista++;
+            artlista[sista].art = "Pinus sylvestris";
+            artlista[sista].familj = "Pinaceae";
+            artlista[sista].svenska = "Tall";
+            //sista++;
             Console.WriteLine("Hej och välkommen till artdatabasen!");
             Console.WriteLine("Skriv 'hjälp' för hjälp, 'sluta' för att sluta!");
             while (true)
