@@ -33,24 +33,24 @@
             while (true)
             {
                 Console.Write("kommando: ");
-                string c = Console.ReadLine();
-                if (c == "sluta")
+                string userInput = Console.ReadLine();
+                if (userInput == "sluta")
                 {
                     break;
                 }
-                else if (c == "hjälp")
+                else if (userInput == "hjälp")
                 {
                     Console.WriteLine("hjälp     - lista kommandona");
                     Console.WriteLine("lista     - lista alla arter");
                 }
-                else if (c == "lista")
+                else if (userInput == "lista")
                 {
                     for (int i = 0; i < sista; i++)
                     {
                         Console.WriteLine($"{sv[i],-12}  {art[i],-24} fam.: {familj[i],-30}");
                     }
                 }
-                else if (c == "ny")
+                else if (userInput == "ny")
                 {
                     Console.Write("artnamn: ");
                     string a = Console.ReadLine();
@@ -64,7 +64,7 @@
                 }
                 else
                 {
-                    Console.WriteLine($"Vaddå '{c}'?");
+                    Console.WriteLine($"Vaddå '{userInput}'?");
                 }
             }
             Console.WriteLine("Hej då!");
