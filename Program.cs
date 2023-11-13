@@ -53,14 +53,14 @@
                 else if (userInput == "ny")
                 {
                     Console.Write("artnamn: ");
-                    string a = Console.ReadLine();
+                    string artnamn = Console.ReadLine();
                     Console.Write("familj:  ");
-                    string f = Console.ReadLine();
+                    string familjenamn = Console.ReadLine();
                     Console.Write("svenska: ");
-                    string s = Console.ReadLine();
-                    art[sista] = a; familj[sista] = f; sv[sista] = s;
+                    string svensktnamn = Console.ReadLine();
+                    art[sista] = artnamn; familj[sista] = familjenamn; sv[sista] = svensktnamn;
                     sista++;
-                    Console.WriteLine($"{a} tillagd");
+                    Console.WriteLine($"{artnamn} tillagd");
                 }
                 else
                 {
